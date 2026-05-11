@@ -141,7 +141,7 @@ const ChatPage = () => {
           <p className="text-xs text-gray-400 uppercase tracking-widest">
             Room
           </p>
-          <h1 className="text-lg font-semibold max-w-[100px] truncate">
+          <h1 className="text-lg font-semibold max-w-[160px] md:max-w-none break-words">
             {roomId}
           </h1>
         </div>

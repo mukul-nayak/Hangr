@@ -96,15 +96,13 @@ const JoinCreateChat = () => {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-300 dark:from-gray-950 dark:to-gray-900 relative overflow-hidden">
+    <div className="h-screen overflow-hidden flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-300 dark:from-gray-950 dark:to-gray-900 relative px-4">
       <div className="absolute w-[500px] h-[500px] bg-blue-500/30 rounded-full blur-[120px] -top-20 -left-20 animate-pulse" />
       <div className="absolute w-[500px] h-[500px] bg-orange-500/30 rounded-full blur-[120px] -bottom-20 -right-20 animate-pulse" />
-
-      <div className="p-10 dark:border-gray-700 border w-full flex flex-col gap-5 max-w-md rounded-2xl dark:bg-gray-900/90 backdrop-blur-md shadow-xl relative z-10">
+      <div className="w-full max-w-sm p-6 sm:p-8 dark:border-gray-700 border flex flex-col gap-5 rounded-2xl dark:bg-gray-900/90 backdrop-blur-md shadow-xl relative z-10">
         <div>
           <img src={chatIcon} alt="Chat Icon" className="w-24 mx-auto" />
         </div>
-
         <div className="text-center">
           <h1 className="text-2xl font-semibold leading-tight m-0">
             Start a Conversation
@@ -114,7 +112,6 @@ const JoinCreateChat = () => {
             Connect instantly with friends
           </p>
         </div>
-
         {/* name div */}
         <div className="">
           <label htmlFor="name" className="block font-medium mb-2">
@@ -136,7 +133,6 @@ const JoinCreateChat = () => {
             className="w-full dark:bg-gray-600 px-4 py-2 border dark:border-gray-600 rounded-full focus:outline-none focus:ring-2 focus:ring-white/30 transition-all duration-200"
           />
         </div>
-
         {/* room id div */}
         <div className="">
           <label htmlFor="roomId" className="block font-medium mb-2">
@@ -162,7 +158,6 @@ const JoinCreateChat = () => {
               : "Share this ID to let people join"}
           </p>
         </div>
-
         {/* button */}
         <div className="flex justify-center gap-2 mt-4">
           <button
