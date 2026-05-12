@@ -75,6 +75,6 @@ public class RoomController {
         int end = Math.min(messages.size(), start+size);
         List<Message> paginatedMessages = messages.subList(start, end);
 
-        return ResponseEntity.ok(messages);
+        return ResponseEntity.ok(paginatedMessages);
     }
 }
